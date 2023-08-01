@@ -8,11 +8,19 @@
 #     print(f'Na posição {c} encontrei o valor {v}!')
 # print('Cheguei ao final da lista.')
 
-valores = list()
-for cont in range (0, 5):
-    valores.append(int(input('Digite um valor: ')))
+# valores = list()
+# for cont in range (0, 5):
+#     valores.append(int(input('Digite um valor: ')))
+#
+# for c, v in enumerate(valores):
+#     print(f'Na posição {c} encontrei o valor {v}!')
+# print('Cheguei ao final da lista.')
+# #testando git
 
-for c, v in enumerate(valores):
-    print(f'Na posição {c} encontrei o valor {v}!')
-print('Cheguei ao final da lista.')
-#testando git
+lista = list()
+for cont in range(0,5):
+    lista.append(int(input('Digite um valor: ')))
+lista.sort()
+
+print(f'O menor da lista é {lista[0]} e sua posição é 0')
+print(lista)
