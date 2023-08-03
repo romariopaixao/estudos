@@ -16,3 +16,6 @@
 #     print(f'Na posição {c} encontrei o valor {v}!')
 # print('Cheguei ao final da lista.')
 # #testando git
+
+print(f'O menor da lista é {lista[0]} e sua posição é 0')
+print(lista)
