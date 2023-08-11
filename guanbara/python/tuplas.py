@@ -23,19 +23,23 @@ lanche = (7, 3, 2 ,9)
 # print(lanche[:2])
 
 '''-------------------------------------------'''
-a = (1, 2, 5, 3, 5,)
-b = (1, 4, 9, 8, 4, 6)
-c = a + b
-print(c)
-'''tamanho da tupla'''
-print(len(c))
-'''numero de vezes que aparece o item 5 na tupla'''
-print(c.count(5))
-"em que posição esta o item 5"
-print(c.index(5))
-"em que posição esta o item 5 iniciando a contagem da posição 3"
-print(c.index(5, 3))
-'''deletando a tupla, so pode ser excluida inteira'''
-del(a)
+# a = (1, 2, 5, 3, 5,)
+# b = (1, 4, 9, 8, 4, 6)
+# c = a + b
+# print(c)
+# '''tamanho da tupla'''
+# print(len(c))
+# '''numero de vezes que aparece o item 5 na tupla'''
+# print(c.count(5))
+# "em que posição esta o item 5"
+# print(c.index(5))
+# "em que posição esta o item 5 iniciando a contagem da posição 3"
+# print(c.index(5, 3))
+# '''deletando a tupla, so pode ser excluida inteira'''
+# del(a)
 
 '''fazer os desafios amanha quando acordar'''
+
+lista = ('um', 'dois', 'tres', 'quatro', 'cinco')
+n = int(input('Digite um numero entre 1 e 5: '))
+print(lista[n-1])
