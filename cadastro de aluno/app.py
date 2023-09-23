@@ -21,7 +21,6 @@ def adicionar_aluno() -> None:
         'nota': nota
     }
     alunos.append(aluno)
-    print(alunos)
     limpar_campos()
     messagebox.showinfo('Adicionado!', 'Aluno cadastrado com sucesso!')
     atualizarTabela()
@@ -46,8 +45,11 @@ def atualizarTabela() -> None:
     for linha in tabela_alunos.get_children():
         tabela_alunos.delete(linha)
     # Atualizando a tabela
+
+    busca = txt_busca.get().lower()
     for aluno in alunos:
-        tabela_alunos.insert("", END,
+        if busca in aluno['nome'].lower():
+            tabela_alunos.insert("", END,
                              values=(aluno["matricula"],
                                      aluno["nome"], aluno["curso"],
                                      aluno["nota"]))
@@ -90,6 +92,9 @@ def limpar_campos() -> None:
     txt_nome.delete(0, END)
     txt_nota.delete(0, END)
     cb_curso.set('')
+
+def buscarPorNome(event) -> None:
+    atualizarTabela()
 
 
 janela = Tk()
@@ -138,6 +143,6 @@ tabela_alunos.grid(row=5, columnspan=3)
 label_busca = Label(janela, text="Buscar:", font="Arial 14 bold", fg="red")
 label_busca.grid(row=6, column=0)
 txt_busca = Entry(janela, font="Arial 14", width=50)
-txt_busca.grid(row=6, columns=1, columnspan=3, sticky=W)
-
+txt_busca.grid(row=6, column=1, columnspan=3, sticky=W)
+txt_busca.bind("<KeyRelease>", buscarPorNome)
 janela.mainloop()
