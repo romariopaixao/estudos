@@ -47,7 +47,8 @@ class AlunoData:
 
 if __name__=='__main__':
     a = AlunoData()
-    a1 = Aluno('jonas', 19, 'python', 5)
-    a1.matricula = 'b4e8c7ae-4d3c-4c3c-9f53-272bffc2bd57'
-    a.update(a1)
-    print(a.select())
+    a1 = Aluno("","romario", 19, "python", 10)
+    # a1 = Aluno('jonas', 19, 'python', 5)
+    # a1.matricula = 'b4e8c7ae-4d3c-4c3c-9f53-272bffc2bd57'
+    # a.update(a1)
+    # print(a.select()
