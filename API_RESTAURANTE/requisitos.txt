@@ -1,0 +1,42 @@
+Listar Cardápio: Permita que os clientes obtenham uma lista de itens do cardápio, 
+incluindo detalhes como nome, descrição, preço e categoria.
+GET /menu
+Obter Detalhes de um Item do Cardápio: Forneça informações detalhadas sobre um item específico do cardápio.
+
+GET /menu/{id}
+Listar Categorias do Cardápio: Permita que os clientes vejam as categorias disponíveis no cardápio, como entradas, pratos principais, sobremesas, etc.
+
+GET /menu/categories
+Listar Itens por Categoria: Permita que os clientes vejam os itens do cardápio em uma categoria específica.
+
+GET /menu/categories/{category_id}/items
+Fazer Pedidos: Permita que os clientes façam pedidos, especificando os itens do cardápio que desejam e a quantidade.
+
+POST /orders
+Listar Pedidos: Forneça uma lista dos pedidos feitos, incluindo detalhes como número do pedido, itens, status e total.
+
+GET /orders
+Obter Detalhes de um Pedido: Permita que os clientes obtenham informações detalhadas sobre um pedido específico.
+
+GET /orders/{order_id}
+Atualizar Status do Pedido: Permita que os funcionários do restaurante atualizem o status de um pedido, como "em preparação," "saiu para entrega," ou "entregue."
+
+PUT /orders/{order_id}/status
+Registrar Reservas: Permita que os clientes façam reservas para mesas no restaurante, especificando a data, hora e número de pessoas.
+
+POST /reservations
+Listar Reservas: Forneça uma lista das reservas feitas, incluindo detalhes como data, hora, número de pessoas e status.
+
+GET /reservations
+Obter Detalhes de uma Reserva: Permita que os clientes obtenham informações detalhadas sobre uma reserva específica.
+
+GET /reservations/{reservation_id}
+Atualizar Status da Reserva: Permita que o restaurante atualize o status de uma reserva, como "confirmada" ou "cancelada."
+
+PUT /reservations/{reservation_id}/status
+Avaliar o Restaurante: Permita que os clientes avaliem o restaurante e deixem comentários sobre sua experiência.
+
+POST /reviews
+Listar Avaliações: Forneça uma lista de avaliações feitas por clientes, incluindo detalhes como classificação, comentários e data.
+
+GET /reviews
