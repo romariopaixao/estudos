@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Corrija a sintaxe do codigo</h3>
+
+<p contenteditable="true" translate="no">
+    saudacao = 'ola'<br><br>
+    print()
+</p>
+
+<ul>
+    <li data-animal-type = 'Felino' onclick="dizerTipoAnimal(this)">Tigre</li>
+    <li data-animal-type = Peixe onclick="dizerTipoAnimal(this)">Tubarao</li>
+    <li data-animal-type = 'Ave' onclick="dizerTipoAnimal(this)">Galinha</li>
+    <script>
+        function dizerTipoAnimal(animal){
+            let tipoAnimal = animal.getAtrribute('data-animal-type')
+            alert('O animal é do tipo' + tipoAnimal)
+        }
+    </script>
+</ul>
+</body>
+</html>
