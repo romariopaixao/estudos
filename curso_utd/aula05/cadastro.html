@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cadastro de Usuário </title>
+</head>
+<body bgcolor="black">
+	<center>
+		<form action="form.html">
+		<table border="0" cellpadding="10" bgcolor="#F0FFFF">
+			<tr>
+				<td colspan="2">
+					<h2> Digite os seus dados para cadastro no sistema</h2>
+				</td>
+			</tr>
+
+			<tr>
+				
+				<td>
+					<label> Nome completo: </label><br>
+					<input required type="text" placeholder="Digite seu nome" size="30"><br><br>
+
+					<label> Email: </label><br>
+					<input required type="email" placeholder="Digite seu email" size="30"><br><br>
+
+					<label> Senha: </label><br>
+					<input required type="password" placeholder="Digite sua senha" size="30"><br><br>
+
+					<label> Confirme a senha: </label><br>
+					<input required type="password" placeholder="Confime sua senha" size="30"><br><br>
+
+					<label> Data de Nascimento: </label><br>
+					<input required type="date" placeholder="Confime sua senha" size="30"><br><br>
+
+				</td>	
+
+				<td>
+					<label> Endereço: </label><br>
+					<input required type="text" placeholder="Digite seu endereço" size="30"><br><br>
+
+					<label> Número: </label><br>
+					<input required type="number" placeholder="Digite o número da casa" size="30" max="99999" min="0"><br><br>
+
+					<label> CPF: </label><br>
+					<input required type="text" placeholder="Digite o seu CPF" size="30" maxlength="11" minlength="11"><br><br>
+
+					<label> Estado Civil: </label><br>
+					<select required>
+						<option value="" selected disabled> -- Selecione -- </option>
+						<option> SOLTEIRO </option>
+						<option> CASADO </option>
+						<option> VIUVO </option>
+						<option> DIVORCIADO </option>
+					</select>
+					<br><br>
+
+					<label> Sexo: </label><br>
+					<input type="radio" name="sexo" checked> Masculino
+					<input type="radio" name="sexo"> Feminino
+					<br><br>
+
+
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" value="REGISTRAR MEUS DADOS NO SISTEMA"></td>
+			</tr>
+		</table>
+	</center>
+
+</body>
+</html>
